@@ -179,6 +179,12 @@ class Controller(object):
         with significant information about each.
         """
         return self._api_read('stat/sta')
+      
+    def get_rogue(self):
+        """Return a list of all rouge,
+        with significant information about each.
+        """
+        return self._api_read('/stat/rogueap')
 
     def get_users(self):
         """Return a list of all known clients,
